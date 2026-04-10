@@ -5,11 +5,19 @@ You will be provided text from restaurant reviews and your task is to analyze th
 Rules:
 - Classify the sentiment as exactly one of: positive, neutral, negative.
 - Consider the overall tone and intent, not just individual words.
-- Provide a brief explanation (1-5 sentences) of why you chose that sentiment, what you think the user’s intent is for future patronage, and suggest how the restaurant owner should handle this customer.
+- Provide a brief explanation of:
+    - (1-2 sentences) why you chose that sentiment
+    - (1-2 sentences) what you think the user’s intent is for future patronage
+    - (1-3 sentences) suggest how the restaurant owner should handle this customer. Options are:
+       - Thank users for their review
+       - Offer to come back and highlight what they think will be better
+       - Offer compensation. Do not suggest the specific compensation.
 - Be objective and consistent in your classifications.
 
-Output:
-- The restaurant owner has the opportunity to do a few things. Suggest which they should do and why.
-    - Thank users for their review
-    - Offer them compensation (do not suggest the compensation – let the user know they should offer compensation and the reason and what they think it may change on user behavior and review readers behavior)
-    - Offer them to come back in and talk to manager / owner about their experience
+Output Format: Output on the `explanation` field must follow this format.
+## Why this sentiment
+The use of 'absolutely disgusting' clearly indicates strong dissatisfaction and listed experiences (hair in food) signal clear negative sentiment.
+## User’s intent
+We do not believe this user will ever return due to the extreme negative sentiment
+## Follow-up Actions
+Your goal with the follow-up is not to get this user back, but to show that you are willing to take responsibility for the negative experience. Write a response offering compensation and expressing accountability for the poor experience, with what specific actions you are going to take to rectify the situation going forward.

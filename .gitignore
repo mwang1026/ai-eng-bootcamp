@@ -26,6 +26,9 @@ venv/
 .DS_Store
 Thumbs.db
 
+# Test scripts (local only)
+scripts/
+
 # Testing
 .coverage
 htmlcov/
