@@ -2,6 +2,7 @@ services:
   - type: web
     runtime: python
     name: ai-eng-bootcamp
+    rootDir: week1
     branch: main
     plan: free
     buildCommand: uv sync --frozen && uv cache prune --ci

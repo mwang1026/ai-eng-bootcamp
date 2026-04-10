@@ -31,24 +31,30 @@ This is a public GitHub repository. Treat every commit as visible to the world.
 | Rate limiting | slowapi |
 | Deployment | Render |
 
+## Repo Layout
+
+Each week of coursework lives in its own subfolder (e.g. `week1/`). Each week folder that has a deployable service contains its own `pyproject.toml`, `uv.lock`, `app/`, `tests/`, and `prompts/`. Render's `rootDir` in `render.yaml` points to the active week.
+
 ## Commands
 
+All `uv` commands run from inside the relevant week folder (e.g. `cd week1`).
+
 ```bash
-# Setup
+# Setup (from week folder, e.g. cd week1)
 uv sync                          # install all dependencies
 uv sync --extra dev              # include dev dependencies
-pre-commit install               # activate pre-commit hooks
+pre-commit install               # activate pre-commit hooks (from repo root)
 
-# Run
+# Run (from week folder)
 uv run uvicorn app.main:app --reload # dev server
 uv run pytest                    # run all tests
 uv run pytest tests/test_foo.py::test_bar  # run a single test
 uv run ruff check .              # lint
 uv run ruff format .             # format
 
-# Security
+# Security (from week folder)
 uv run pip-audit                 # scan dependencies for vulnerabilities
-pre-commit run --all-files       # run all hooks on entire repo
+pre-commit run --all-files       # run all hooks on entire repo (from repo root)
 ```
 
 ## Conventions
