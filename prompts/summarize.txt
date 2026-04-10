@@ -22,3 +22,8 @@ Rules:
 - Write in clear, professional prose.
 - Capture the key points and main ideas.
 - If you are running out of words, focus on the Intent first, then the Arc, then the key points and main ideas.
+
+Output Example:
+This text is a factual paragraph about the origin of oil drills. It lists facts across a timeline of how it emerged. Oil drills originated in the 1800s and were first pioneered in Texas.
+
+Note how it goes (1) what the text is [intent] (2) how it flows [arc] and (3) the key points made.
