@@ -33,3 +33,7 @@ scripts/
 .coverage
 htmlcov/
 .pytest_cache/
+
+# RAG artifacts
+chroma_db/
+data/

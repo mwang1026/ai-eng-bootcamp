@@ -8,6 +8,7 @@ repos:
     rev: v5.0.0
     hooks:
       - id: check-added-large-files
+        args: ['--maxkb=1000']  # uv.lock files can exceed 500KB default
       - id: check-merge-conflict
       - id: detect-private-key
       - id: trailing-whitespace
