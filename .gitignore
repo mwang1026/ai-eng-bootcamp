@@ -37,3 +37,6 @@ htmlcov/
 # RAG artifacts
 chroma_db/
 data/
+
+# ADK local state
+.adk/
